@@ -1,0 +1,20 @@
+<h1>Ask your coach anything</h1>
+
+<form action="/answer" method="get" data-turbo="false">
+  <input type="text" name="question" placeholder="Type your question here" />
+  <button type="submit">Ask</button>
+</form>
+
+<h1>Ask your coach anything</h1>
+
+<form action="/answer" method="get" data-turbo="false">
+  <input type="text" name="question" placeholder="Type your question here" />
+  <button type="submit">Ask</button>
+</form>
+<h1>Your Question</h1>
+<p><strong>Question:</strong> <%= @question %></p>
+
+<h1>Coach's Answer</h1>
+<p><%= @answer %></p>
+
+<a href="/ask">Ask another question</a>
